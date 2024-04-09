@@ -10,15 +10,58 @@ $dim-grey: #939CAA;
 $light-grey: #E5ECF4;
 $snow: #F2F5F9;
 $light-yellow: #FFF4DF;
-$white: #ffff;
+$white: #FFFFFF;
 
 
 @media (max-width: 767px) {
-    header {
-        background-color: $white;
 
-        nav ul {
-            display: none;
+    body {
+        width: auto;
+        margin: 0 auto;
+        
+        header {
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px 32px 22px 32px;
+            width: 100%;
+
+            #icon-hamburger {
+                position: absolute;
+            }
+
+            #scoot-logo {
+                margin: 0 auto;
+            }
+            
+            nav {
+                visibility: hidden;
+            }
+
+            button {
+                display: none;
+            }
+        }
+
+        #main-home {
+
+            #scoot_sharing {
+                background-image: url("./assets/bg-img-scoot-share-mobile.jpg");
+
+                #scoot_sharing_present {
+
+                    h1 {
+                        font-family: "Space Mono", monospace;
+                        color: $white;
+                    }
+
+                    p {
+                        font-family: "Lexend Deca", sans-serif;
+                        color: $white;
+                    }
+                }
+            }
         }
     }
 }

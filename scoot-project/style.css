@@ -3,7 +3,7 @@
 /* background des petits cercles*/
 @media (max-width: 767px) {
   header {
-    background-color: white;
+    background-color: #FFFFFF;
   }
   header nav ul {
     display: none;
