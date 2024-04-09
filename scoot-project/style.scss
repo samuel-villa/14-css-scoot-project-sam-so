@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+// colors
 $icons-color: #fcb72b; /* background des petits cercles*/
 $titres-color: #495567;
 $grey: #333A44;
@@ -7,9 +12,14 @@ $snow: #F2F5F9;
 $light-yellow: #FFF4DF;
 $blanc: #ffff;
 
+
 @media (max-width: 767px) {
     header {
-        background-color: ;
+        background-color: $blanc;
+
+        nav ul {
+            display: none;
+        }
     }
 }
 

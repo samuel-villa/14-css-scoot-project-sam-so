@@ -1,1 +1,11 @@
-/* background des petits cercles*//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* background des petits cercles*/
+@media (max-width: 767px) {
+  header {
+    background-color: white;
+  }
+  header nav ul {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
