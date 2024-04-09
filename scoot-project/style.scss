@@ -10,12 +10,12 @@ $dim-grey: #939CAA;
 $light-grey: #E5ECF4;
 $snow: #F2F5F9;
 $light-yellow: #FFF4DF;
-$blanc: #ffff;
+$white: #ffff;
 
 
 @media (max-width: 767px) {
     header {
-        background-color: $blanc;
+        background-color: $white;
 
         nav ul {
             display: none;
