@@ -48,6 +48,19 @@ $white: #FFFFFF;
 
             #scoot_sharing {
                 background-image: url("./assets/bg-img-scoot-share-mobile.jpg");
+
+                #scoot_sharing_present {
+
+                    h1 {
+                        font-family: "Space Mono", monospace;
+                        color: $white;
+                    }
+
+                    p {
+                        font-family: "Lexend Deca", sans-serif;
+                        color: $white;
+                    }
+                }
             }
         }
     }
