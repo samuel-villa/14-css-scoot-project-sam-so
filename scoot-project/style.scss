@@ -1,5 +1,15 @@
 $icons-color: #fcb72b; /* background des petits cercles*/
 $titres-color: #495567;
-$gris: #333A44;
-$text-color: #939caa;
+$grey: #333A44;
+$dim-grey: #939CAA;
+$light-grey: #E5ECF4;
+$snow: #F2F5F9;
+$light-yellow: #FFF4DF;
 $blanc: #ffff;
+
+@media (max-width: 767px) {
+    header {
+        background-color: ;
+    }
+}
+
