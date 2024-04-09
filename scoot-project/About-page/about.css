@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* background des petits cercles*/
 body {
-  background-color: black;
-}/*# sourceMappingURL=about.css.map */
+  width: 100%;
+  min-height: 100vh;
+}
+
+.footer-1 {
+  background-color: #495567;
+  border: none;
+  width: 100%;
+  height: 320px;
+}
+
+.footer-2 {
+  background-color: #333A44;
+  border: none;
+  width: 100%;
+  height: 438px;
+  top: 5164px;
+}
