@@ -3,18 +3,33 @@
     #main-home {
 
         #scoot_sharing {
+            height: 687px;
             background-image: url("../assets/img/bg-img-scoot-share-mobile.jpg");
+            background-repeat: round;
 
             #scoot_sharing_present {
+                text-align: center;
+                padding-top: 115px;
+                padding-left: 32px;
+                padding-right: 32px;
 
                 h1 {
                     font-family: "Space Mono", monospace;
+                    font-size: 40px;
+                    line-height: 40px;
+                    font-weight: 700;
+                    letter-spacing: -0.179;
                     color: $white;
+                    padding-bottom: 24px;
                 }
 
                 p {
                     font-family: "Lexend Deca", sans-serif;
+                    font-size: 15px;
+                    line-height: 25px;
+                    font-weight: 400;
                     color: $white;
+                    padding-bottom: 34px;
                 }
             }
         }
