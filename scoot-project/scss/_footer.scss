@@ -1,28 +1,78 @@
+footer {
+  .footer-1 {
+    background-color: $dark-navy;
+    border: none;
+    width: 100%;
+    height: 320px;
+    position: relative;
 
-.footer-1 {
-  background-color: $dark-navy;
-  border: none;
-  width: 100%;
-  height: 320px;
-}
+    h2 {
+      font-family: "Space Mono";
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: -1.4285714626312256px;
+      text-align: center;
+      padding-top: 80px;
+      color: $white;
+    }
+    .cercle {
+      position: absolute;
+      bottom: 0;
 
-.footer-2 {
-  background-color: $grey;
-  border: none;
-  width: 100%;
-  height: 438px;
-  top: 5164px; 
-}
+      right: 0;
+      height: 60%;
+      width: 250%;
+    }
+    .cercle img {
+      height: 100%;
+    }
+    .footer__div__download {
+      /*position: absolute;*/
+      display: flex;
+    
+      gap: 13px;
+     justify-content: center;
+      margin: 60px 59px;
+      
+    }
+  }
 
-.footer-txt1{
-  font-family: "Space Mono";
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 25px;
-  text-align: left;
-  color: $dim-grey;
+  .footer-2 {
+    background-color: $grey;
+    border: none;
+    width: 100%;
+    height: 438px;
+    top: 5164px;
+    padding: 0 128px;
 
-  #{&}-txt1 {
-    color: $dim-grey;
+    .footer-txt1 {
+      font-family: "Space Mono";
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 25px;
+      color: $dim-grey;
+
+      .txt {
+        margin-left: 37px;
+        margin-bottom: 16px;
+      }
+      .Txt {
+        margin-left: 23px;
+      }
+      .txT {
+        margin-left: 28px;
+      }
+    }
+    .log {
+      margin: auto;
+      padding-top: 64px;
+      padding-bottom: 42px;
+    }
+    .logo {
+      display: flex;
+      margin-top: 85px;
+      gap: 24px;
+    }
   }
 }
