@@ -1,11 +1,17 @@
 
 main{
-    section{
+    .wrap{
+        padding: 0 32px;
+        text-align: center;
         .faq{
-            background-color: $snow;
+            
             .question{
+                font-family: "space Mono";
+                font-weight: 700;
                 color: $grey;
                 background-color:$snow;
+                display: flex;
+            
             }
         }
     }
