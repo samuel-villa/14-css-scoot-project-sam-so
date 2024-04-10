@@ -7,7 +7,7 @@ footer {
     position: relative;
 
     h2 {
-      font-family: "Space Mono";
+      font-family: "Space Mono", monospace;
       font-size: 32px;
       font-weight: 700;
       line-height: 32px;
@@ -28,7 +28,6 @@ footer {
       height: 100%;
     }
     .footer__div__download {
-      /*position: absolute;*/
       display: flex;
     
       gap: 13px;
@@ -43,35 +42,37 @@ footer {
     border: none;
     width: 100%;
     height: 438px;
-    top: 5164px;
     padding: 0 128px;
+    padding-bottom: 41px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     .footer-txt1 {
-      font-family: "Space Mono";
+      font-family: "Space Mono", monospace;
       font-size: 15px;
       font-weight: 700;
       line-height: 25px;
       color: $dim-grey;
 
-      .txt {
-        margin-left: 37px;
-        margin-bottom: 16px;
-      }
-      .Txt {
-        margin-left: 23px;
-      }
-      .txT {
-        margin-left: 28px;
-      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
     }
     .log {
-      margin: auto;
       padding-top: 64px;
       padding-bottom: 42px;
     }
     .logo {
       display: flex;
-      margin-top: 85px;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      padding-top: 85px;
       gap: 24px;
     }
   }
