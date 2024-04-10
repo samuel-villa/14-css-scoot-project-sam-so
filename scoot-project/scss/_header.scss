@@ -62,3 +62,43 @@ header {
         }
     }
 }
+
+@media (min-width: 1226px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px 165px 22px 165px;
+        width: 100%;
+
+        #icon-hamburger {
+            display: none;
+        }
+    
+        #scoot-logo {
+            margin: 0;
+        }
+        
+        nav {
+            display: block;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 32px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: "Space Mono", monospace;
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 700;
+            color: $dim-grey;
+        }
+    
+        button {
+            display: block;
+        }
+    }
+}
