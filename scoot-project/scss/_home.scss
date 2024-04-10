@@ -112,7 +112,7 @@
             text-align: center;
             gap: 120px;
             overflow-x: hidden;
-
+            
             .actionfeatures__article {
                 display: flex;
                 flex-direction: column-reverse;
@@ -154,8 +154,22 @@
                 .yellow-arrows {
                     position: absolute;
                     scale: 2.5;
+                }
+
+                .arrow-telemetry {
                     left: 230px;
-                    top: 210px
+                    top: 210px;
+                }
+
+                .arrow-city {
+                    scale: 1.5;
+                    top: 20px;
+                    left: -150px;
+                }
+
+                .arrow-payment {
+                    top: 50px;
+                    right: -340px;
                 }
             }
         }
