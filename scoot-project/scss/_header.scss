@@ -1,28 +1,64 @@
-@media (max-width: 767px) {
-        
-    header {
-        background-color: $white;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 22px 32px 22px 32px;
-        width: 100%;
+header {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 32px 22px 32px;
+    width: 100%;
 
-        #icon-hamburger {
-            position: absolute;
-        }
+    #icon-hamburger {
+        position: absolute;
+    }
 
-        #scoot-logo {
-            margin: 0 auto;
-        }
-        
-        nav {
-            display: none;
-        }
+    #scoot-logo {
+        margin: 0 auto;
+    }
+    
+    nav {
+        display: none;
+    }
 
-        button {
-            display: none;
-        }
+    button {
+        display: none;
     }
 }
 
+@media (min-width: 768px) and (max-width: 1225px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px 40px 22px 40px;
+        width: 100%;
+
+        #icon-hamburger {
+            display: none;
+        }
+    
+        #scoot-logo {
+            margin: 0;
+        }
+        
+        nav {
+            display: block;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 32px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: "Space Mono", monospace;
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 700;
+            color: $dim-grey;
+        }
+    
+        button {
+            display: block;
+        }
+    }
+}
