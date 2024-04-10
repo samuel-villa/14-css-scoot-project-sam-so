@@ -1,19 +1,81 @@
+main {
+  cursor: pointer; /** pas encore sur**/
+  .wrap {
+    padding: 0 32px;
+    text-align: center;
 
-main{
-    .wrap{
-        padding: 0 32px;
-        text-align: center;
-        .faq{
-            
-            .question{
-                font-family: "space Mono";
-                font-weight: 700;
-                color: $grey;
-                background-color:$snow;
-                display: flex;
-            
-            }
-        }
+    margin: auto;
+    margin-bottom: 120px;
+    h2 {
+      font-family: "Space Mono";
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: -1.4285714626312256px;
+      color: $dark-navy;
     }
-    
+    h3 {
+      font-family: "Space Mono";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: -1.0714285373687744px;
+      color: $dark-navy;
+      margin-top: 48px;
+      margin-bottom: 32px;
+    }
+    .faq {
+      margin: 16px 0;
+      .active{
+        border: none;
+      }
+      .question {
+        font-family: "space Mono";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.8035714030265808px;
+        color: $grey;
+        background-color: $snow;
+        display: flex;
+        cursor: pointer;
+        width: 100%;
+        padding: 2rem 2.5rem; /** pas encore sur**/
+        border: none;
+        outline: none;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        transition: 0.4s; /**pour le changement de couleur**/
+        img {
+          width: 16px;
+          height: 8px;
+          top: 20px;
+          left: 235px;
+
+          border: 3px 0px 0px 0px;
+        }
+      }
+      .active,
+      .question:hover {
+        background-color: $snow; /**juste pour tester**/
+      }
+      .pannel {
+        width: 100%;
+        padding: 2rem 2.5rem;
+        background-color: $snow;
+        overflow: hidden;
+        display: none;
+        p {
+          color: $dark-navy;
+          font-family: "Lexend Deca";
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+          text-align: left;
+          
+        }
+      }
+    }
+  }
 }
