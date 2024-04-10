@@ -2,7 +2,7 @@
 
     .index__main {
 
-        .index__main__section__scoot_sharing {
+        .scoot_sharing {
             position: relative;
             height: 687px;
             background-image: url("../assets/img/bg-img-scoot-share-mobile.jpg");
@@ -25,7 +25,7 @@
                 display: none;
             }
 
-            .index__main__section__div {
+            .scoot_sharing__div {
                 text-align: center;
                 padding-top: 115px;
                 padding-left: 32px;
@@ -52,7 +52,7 @@
             }
         }
 
-        .index__main__section__features {
+        .features {
 
             padding: 120px 32px 120px 32px;
             display: flex;
@@ -63,7 +63,7 @@
                 display: none;
             }
 
-            .index__main__section__features__article {
+            .features__article {
 
                 display: flex;
                 flex-direction: column;
@@ -71,7 +71,7 @@
                 align-items: center;
                 text-align: center;
 
-                .index__main__section__features__article__img {
+                .features__article__img {
                     background-color: $yellow;
                     height: 56px;
                     width: 56px;
@@ -99,6 +99,62 @@
                     line-height: 25px;
                     font-weight: 400;
                     color: $dim-grey;
+                }
+            }
+        }
+
+        .actionfeatures {
+
+            padding: 0px 32px 120px 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 120px;
+
+            .actionfeatures__article {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 56px;
+
+                .article-desc {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                    align-items: center;
+                    text-align: center;
+
+                    h2 {
+                        font-family: "Space Mono", monospace;
+                        font-size: 32px;
+                        line-height: 32px;
+                        font-weight: 700;
+                        letter-spacing: -0.143;
+                        color: $dark-navy;
+                    }
+
+                    p {
+                        font-family: "Lexend Deca", sans-serif;
+                        font-size: 15px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        color: $dim-grey;
+                    }
+                }
+            }
+
+            .article-img {
+                position: relative;
+                
+                .grey-round-mask {
+                    display: none;
+                }
+
+                .yellow-arrows {
+                    position: absolute;
+                    scale: 2.5;
+                    left: 230px;
+                    top: 210px
                 }
             }
         }
