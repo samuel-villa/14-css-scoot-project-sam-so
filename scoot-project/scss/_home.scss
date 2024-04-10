@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+
+    #main-home {
+
+        #scoot_sharing {
+            background-image: url("../assets/img/bg-img-scoot-share-mobile.jpg");
+
+            #scoot_sharing_present {
+
+                h1 {
+                    font-family: "Space Mono", monospace;
+                    color: $white;
+                }
+
+                p {
+                    font-family: "Lexend Deca", sans-serif;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

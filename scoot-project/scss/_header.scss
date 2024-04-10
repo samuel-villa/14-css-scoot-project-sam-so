@@ -1,52 +1,28 @@
 @media (max-width: 767px) {
-
-    body {
-        width: auto;
-        margin: 0 auto;
         
-        header {
-            background-color: $white;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 22px 32px 22px 32px;
-            width: 100%;
+    header {
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 32px 22px 32px;
+        width: 100%;
 
-            #icon-hamburger {
-                position: absolute;
-            }
-
-            #scoot-logo {
-                margin: 0 auto;
-            }
-            
-            nav {
-                visibility: hidden;
-            }
-
-            button {
-                display: none;
-            }
+        #icon-hamburger {
+            position: absolute;
         }
 
-        #main-home {
+        #scoot-logo {
+            margin: 0 auto;
+        }
+        
+        nav {
+            display: none;
+        }
 
-            #scoot_sharing {
-                background-image: url("./assets/img/bg-img-scoot-share-mobile.jpg");
-
-                #scoot_sharing_present {
-
-                    h1 {
-                        font-family: "Space Mono", monospace;
-                        color: $white;
-                    }
-
-                    p {
-                        font-family: "Lexend Deca", sans-serif;
-                        color: $white;
-                    }
-                }
-            }
+        button {
+            display: none;
         }
     }
 }
+
