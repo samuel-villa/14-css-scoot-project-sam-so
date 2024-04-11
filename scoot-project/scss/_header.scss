@@ -56,6 +56,10 @@ header {
             font-weight: 700;
             color: $dim-grey;
         }
+
+        a:hover {
+            color: $yellow;
+        }
     
         button {
             display: block;

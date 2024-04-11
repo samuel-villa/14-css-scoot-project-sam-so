@@ -8,3 +8,10 @@ button {
     color: $white;
     border: none;
 }
+
+button:hover {
+    color: $yellow;
+    background-color: transparent;
+    border: solid 3px $yellow;
+    padding: 11px 36px 11px 36px;
+}

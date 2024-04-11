@@ -63,6 +63,11 @@ footer {
       text-align: center;
       gap: 16px;
     }
+
+    p:hover {
+      color: $yellow;
+    }
+
     .log {
       padding-top: 64px;
       padding-bottom: 42px;
@@ -74,6 +79,10 @@ footer {
       text-align: center;
       padding-top: 85px;
       gap: 24px;
+
+      img:hover {
+        filter: brightness(0) invert(1);
+      }
     }
   }
 }
