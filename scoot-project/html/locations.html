@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>locations</title>
+    <link rel="stylesheet" type="text/css" href="../scss/style.scss" />
   </head>
   <body>
     {{> header }}
 
     <main>
+      <nav>
+        <h1>Locations</h1>
+      </nav>
       <section>
         <!--titre et background-->
         <div class="sct-back-txt">
@@ -21,22 +25,20 @@
         </div>
       </section>
 
-      <section>
-        <div>
-          <img src="../assets/img/map-locations (6).png" alt="map" />
-          <div>
-            <img src="../assets/icons/boules-locations.svg" alt="locations" />
-          </div>
+      <section class="sct-map">
+        <div class="map">
+          <img src="../assets/img/map complete.svg" alt="map" />
+
         </div>
       </section>
 
-      <section>
+      <section class="container-box">
         <!--cadre avec locations-->
         <div class="container">
-          <div><p>New York</p></div>
-          <div><p>London</p></div>
-          <div><p>Jakarta</p></div>
-          <div><p>Yokohama</p></div>
+          <div class="box"><p>New York</p></div>
+          <div class="box"><p>London</p></div>
+          <div class="box"><p>Jakarta</p></div>
+          <div class="box"><p>Yokohama</p></div>
         </div>
       </section>
 
