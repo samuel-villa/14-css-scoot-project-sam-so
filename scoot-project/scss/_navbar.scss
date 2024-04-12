@@ -1,0 +1,39 @@
+#navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 64px;
+    left: 0;
+    width: 70vw;
+    background-color: $grey;
+    height: 92vh;
+    z-index: 2;
+    padding-top: 64px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 32px;
+        padding-left: 0;
+
+        li {
+            a {
+                text-decoration: none;
+                font-family: "Space Mono", monospace;
+                color: $light-grey;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .hidden-btn {
+        display: block;
+    }
+}

@@ -6,6 +6,10 @@ header {
     padding: 22px 32px 22px 32px;
     width: 100%;
 
+    #navbar {
+        // display: none;
+    }
+
     #icon-hamburger {
         position: absolute;
     }
@@ -17,6 +21,7 @@ header {
     nav {
         display: none;
     }
+
 
     button {
         display: none;

@@ -1,21 +1,49 @@
 <header>
-    <a id="icon-hamburger" href="/index.html"><img src="../assets/icons/icon-hamburger.svg" alt="icon-hamburger"></a>
+  <div id="navbar">
+    <ul>
+      <li>
+        <a href="../html/about.html">About</a>
+      </li>
+      <li>
+        <a href="../html/locations.html">Location</a>
+      </li>
+      <li>
+        <a href="../html/careers.html">Careers</a>
+      </li>
+    </ul>
 
-    <img id="scoot-logo" src="../assets/logos/logo-scoot.jpg" alt="logo-scoot">
-    
-    <nav>
-      <ul>
-        <li>
-          <a href="./about.html">About</a>
-        </li>
-        <li>
-          <a href="./location.html">Location</a>
-        </li>
-        <li>
-          <a href="./careers.html">Careers</a>
-        </li>
-      </ul>
-    </nav>
+    <button class="hidden-btn" type="button">Get Scootin</button>
+  </div>
 
-    <button type="button">Get Scootin</button>
+  <a id="icon-hamburger" href="javascript:void(0);" onclick="openMenu()"><img src="../assets/icons/icon-hamburger.svg" alt="icon-hamburger"></a>
+
+  <img id="scoot-logo" src="../assets/logos/logo-scoot.jpg" alt="logo-scoot">
+
+
+  <nav>
+    <ul>
+      <li>
+        <a href="../html/about.html">About</a>
+      </li>
+      <li>
+        <a href="../html/locations.html">Location</a>
+      </li>
+      <li>
+        <a href="../html/careers.html">Careers</a>
+      </li>
+    </ul>
+  </nav>
+
+  <button type="button">Get Scootin</button>
+
+  <script>
+    function openMenu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 </header>
