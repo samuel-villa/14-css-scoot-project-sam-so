@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About-page</title>
     <link rel="stylesheet" type="text/css" href="../scss/style.scss" />
-    <script src="about.js"></script>
+    <script src="../js/about.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSPlugin.min.js"></script>
+
   </head>
   <body>
     <!---->
@@ -121,40 +125,26 @@
         <!--FAQ-->
         <h2>FAQs</h2>
         <h3>How it works</h3>
-        <div class="faq">
-          <details>
-           <summary>
-
-           
-              How do I download the <br> app?
-            
-             <!-- <i></i> -->
-             <img class="arrow-down"
-               src="../assets/icons/petite fleche vers le bas.svg"
-               alt="fleche-bas" />
-               <img class="arrow-up" src="../assets/icons/petite fleche vers le haut.svg" alt="fleche haut">
- 
-             <!--ici on va mettre  l'icon-->
-          
-           </summary> 
-            
-              <p>
-                To download the Scoot app, you can search “Scoot” in both the App
-                and Google Play stores. An even simpler way to do it would be to
-                click the relevant link at the bottom of this page and you'll be
-                re-directed to the correct page.
-              </p>
-            
-          </details>
-
+        <div class="container-faq">
+          <div class="question">
+            <div class="visible-pannel">
+              <h2>How do I download the app?</h2>
+              <img src="../assets/icons/petiteflecheverslebas.svg" alt="arrow-animation">
+            </div>
+            <div class="toggle-pannel">
+              <h4>How do I download the app?</h4>
+              <p>To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you'll be re-directed to the correct page.</p>
+            </div>
+          </div>
         </div>
+        
         <!---->
         <div class="faq">
-          <button class="question">
+          <button class="questions">
             Can I find a nearby Scoots?
             <!--ici on va mettre  l'icon-->
             <img
-              src="../assets/icons/petite fleche vers le bas.svg"
+              src="../assets/icons/petiteflecheverslebas.svg"
               alt="fleche-bas"
             />
           </button>
@@ -167,11 +157,11 @@
         </div>
         <!---->
         <div class="faq">
-          <button class="question">
+          <button class="questions">
             Do I need a license to ride?
             <!--ici on va mettre  l'icon-->
             <img
-              src="../assets/icons/petite fleche vers le bas.svg"
+              src="../assets/icons/petiteflecheverslebas.svg"
               alt="fleche-bas"
             />
           </button>
@@ -186,12 +176,12 @@
         <h3>Safe driving</h3>
 
         <div class="faq">
-          <button class="question">
+          <button class="questions">
             Should I wear a <br />
             helmet?
             <!--ici on va mettre  l'icon-->
             <img
-              src="../assets/icons/petite fleche vers le bas.svg"
+              src="../assets/icons/petiteflecheverslebas.svg"
               alt="fleche-bas"
             />
           </button>
@@ -206,11 +196,11 @@
         </div>
         <!---->
         <div class="faq">
-          <button class="question">
+          <button class="questions">
             How about the rules & regulations?
             <!--ici on va mettre  l'icon-->
             <img
-              src="../assets/icons/petite fleche vers le bas.svg"
+              src="../assets/icons/petiteflecheverslebas.svg"
               alt="fleche-bas"
             />
           </button>
@@ -223,11 +213,11 @@
         </div>
         <!---->
         <div class="faq">
-          <button class="question">
+          <button class="questions">
             What if I damage my Scoot?
             <!--ici on va mettre  l'icon-->
             <img
-              src="../assets/icons/petite fleche vers le bas.svg"
+              src="../assets/icons/petiteflecheverslebas.svg"
               alt="fleche-bas"
             />
           </button>

@@ -165,12 +165,83 @@ main {
 
   /** section faq**/
   .wrap {
+    .container-faq {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    
+      .question {
+        width: 100%;
+        height: auto;
+        margin: 5px;
+    
+        .visible-pannel {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: $snow;
+          position: relative;
+          z-index: 100;
+          padding: 2rem 2.5rem;
+    
+          h2 {
+            font-family: "space Mono";
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.8035714030265808px;
+            color: $grey;
+          }
+    
+          img {
+            width: 16px;
+            height: 8px;
+            border: 3px 0px 0px 0px;
+          }
+        }
+    
+        .toggle-pannel {
+          padding: 0 15px;
+          height: 0;
+          opacity: 0;
+          display: none;
+    
+          &.show {
+            display: block;
+          }
+    
+          h4 {
+            font-family: "space Mono";
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.8035714030265808px;
+            color: $grey;
+          }
+    
+          p {
+            color: $dark-navy;
+            font-family: "Lexend Deca";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: left;
+            background: $snow; 
+          }
+        }
+      }
+    }
+    
+
     padding: 0 32px;
-    text-align: center;
+   /** text-align: center;**/
 
     margin: auto;
     margin-bottom: 120px;
-    h2 {
+   /** h2 {
       font-family: "Space Mono";
       font-size: 32px;
       font-weight: 700;
@@ -187,61 +258,15 @@ main {
       color: $dark-navy;
       margin-top: 48px;
       margin-bottom: 32px;
-    }
+    }**/
     .faq {
-      details {
-        width: 100%;
-        padding: 2rem 2.5rem; /** pas encore sur**/
-        background-color: $snow;
-        overflow: hidden;
 
-        summary {
-          width: 100%;
-
-          background-color: $snow;
-          display: block;
-          position: relative;
-          cursor: pointer;
-          font-family: "Space Mono";
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 24px;
-          letter-spacing: -0.8035714030265808px;
-          text-align: left;
-          color: $grey;
-          img {
-            width: 16px;
-            height: 8px;
-            top: 20px;
-            left: 235px;
-            border: 3px 0px 0px 0px;
-          position: absolute;
-            margin-left: 20px;
-          }
-          .arrow-up {
-            display: none;
-          }
-
-
-        }
-
-        p {
-          font-family: "Lexend Deca";
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 25px;
-          text-align: left;
-          margin-top: 24px;
-          margin-bottom: 32px;
-          color: $dark-navy;
-        }
-      }
 
       margin: 16px 0;
       .active {
         border: none;
       }
-      .question {
+      .questions {
         font-family: "space Mono";
         font-weight: 700;
         font-size: 18px;
@@ -278,14 +303,14 @@ main {
         background-color: $snow;
         overflow: hidden;
         display: none;
-        p {
+       /** p {
           color: $dark-navy;
           font-family: "Lexend Deca";
           font-size: 15px;
           font-weight: 400;
           line-height: 25px;
           text-align: left;
-        }
+        }**/
       }
     }
   }

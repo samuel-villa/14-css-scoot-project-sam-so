@@ -1,15 +1,33 @@
-const questions = document.querySelectorAll('.question img'); // Select all buttons with class "question"
+document.addEventListener('DOMContentLoaded', function() {
+  const allCross = document.querySelectorAll('.visible-pannel img');
 
-console.log(questions);
-questions.forEach(element =>{
-
+  allCross.forEach(element => {
     element.addEventListener('click', function(){
+      const togglePanel = this.parentNode.nextElementSibling;
 
-        //console.log(this.src);
-        
-    })
-})
-/**var i;
+      if (this.src.includes('petiteflecheverslebas')) {
+        this.src = '../assets/icons/petiteflecheverslehaut.svg';
+        togglePanel.classList.add('show'); // Ajouter la classe "show"
+      } else if (this.src.includes('petiteflecheverslehaut')) {
+        this.src = '../assets/icons/petiteflecheverslebas.svg';
+        togglePanel.classList.remove('show'); // Retirer la classe "show"
+      }
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+/**const questions = document.querySelectorAll('.question'); // Select all buttons with class "question"
+
+var i;
 
 for (let i = 0; i < questions.length; i++) {
   questions[i].addEventListener("click", function() {
