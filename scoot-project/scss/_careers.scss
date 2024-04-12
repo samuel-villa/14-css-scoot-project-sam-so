@@ -273,3 +273,115 @@
         }
     }
 }
+
+
+
+
+@media (min-width: 1226px) {
+    .careers__main {
+        .join-mission {
+            padding-left: 165px;
+            padding-right: 155px;
+            padding-bottom: 200px;
+            position: relative;
+
+            .join-mission__article {
+                display: flex;
+                flex-direction: row;
+                gap: 220px;
+
+                .join-article-desc {
+                    width: 445px;
+                    align-items: start;
+                    gap: 24px;
+    
+                    h2 {
+                        font-size: 48px;
+                        font-weight: 700;
+                        line-height: 48px;
+                        letter-spacing: -2.14px;
+                        text-align: left;
+                    }
+    
+                    p {
+                        text-align: justify;
+                        padding-bottom: 16px;
+                    }
+                }
+            }
+    
+            .join-article-img {
+                width: 445px;
+                position: unset;
+
+                .mission-grey-round-mask {
+                    display: block;
+                    position: absolute;
+                    z-index: -1;
+                    top: 70px;
+                    right: 0px;
+                }
+    
+                .mission-yellow-arrows {
+                    scale: 1;
+                    left: unset;
+                    right: 0;
+                    top: 350px;
+                }
+            }
+        }
+
+        .why-join {
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 90px;
+    
+            h2 {
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.14px;
+                padding-bottom: 48px;
+            }
+    
+            .join-articles {
+                flex-direction: row;
+                gap: 30px;
+                justify-content: center;
+    
+                .join__article {
+                    width: 350px;
+                }
+            }
+        }
+
+        .vacancies {
+            padding-left: 165px;
+            padding-right: 165px;
+            gap: 24px;
+    
+            .vacancy {
+                flex-direction: row;
+                justify-content: space-between;
+                
+                .vacancy-desc {
+                    h3 {
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -1.07px;
+                        text-align: left;
+                        padding-bottom: 8px;
+                    }
+
+                    h4 {
+                        text-align: left;
+                    }
+                }
+
+                button {
+                    padding-left: 67px;
+                    padding-right: 67px;
+                }
+            }
+        }
+    }
+}

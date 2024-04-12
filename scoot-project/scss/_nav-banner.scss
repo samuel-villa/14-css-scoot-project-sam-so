@@ -37,3 +37,21 @@
         }
     }
 }
+
+
+
+@media (min-width: 1226px) {
+    .nav-element {
+        justify-content: start;
+        
+        h1 {
+            padding-left: 165px;
+        }
+    
+        img {
+            display: block;
+            position: absolute;
+            right: 0;
+        }
+    }
+}
