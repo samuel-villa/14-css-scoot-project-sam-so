@@ -1,4 +1,4 @@
-nav {
+.nav-element {
     background-image: url("../assets/img/nav-banner-mobile.jpg");
     background-repeat: repeat;
     background-position: center center;
@@ -6,6 +6,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     
     h1 {
         font-family: "Space Mono", monospace;
@@ -14,5 +15,25 @@ nav {
         line-height: 40px;
         letter-spacing: -1.78px;
         color: $white;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1225px) {
+    .nav-element {
+        justify-content: start;
+        
+        h1 {
+            padding-left: 97px;
+        }
+    
+        img {
+            display: block;
+            position: absolute;
+            right: 0;
+        }
     }
 }

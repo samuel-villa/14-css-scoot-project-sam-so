@@ -1,5 +1,6 @@
 .careers__main {
     overflow-x: hidden;
+    position: relative;
 
     .join-mission {
 
@@ -10,7 +11,6 @@
         text-align: center;
         gap: 120px;
         overflow-x: hidden;
-        position: relative;
 
         .join-mission__article {
             display: flex;
@@ -58,8 +58,8 @@
             .mission-yellow-arrows {
                 position: absolute;
                 scale: 1.8;
-                left: 210px;
-                top: 290px;
+                left: 200px;
+                top: 445px;
             }
         }
     }
@@ -171,6 +171,103 @@
                     line-height: 25px;
                     text-align: center;
                     color: $dark-navy;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1225px) {
+    .careers__main {
+        .join-mission {
+
+            .join-mission__article {
+    
+                .join-article-desc {
+                    padding-left: 66px;
+                    padding-right: 66px;
+    
+                    h2 {
+                        font-size: 48px;
+                        line-height: 48px;
+                    }
+    
+                    p {
+                        font-family: "Lexend Deca", sans-serif;
+                        font-size: 15px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        color: $dim-grey;
+                    }
+                }
+            }
+    
+            .join-article-img {
+    
+                .mission-grey-round-mask {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 210px;
+                    z-index: -1;
+                }
+    
+                .mission-yellow-arrows {
+                    scale: 1;
+                    left: unset;
+                    right: 0;
+                    top: 520px;
+                }
+            }
+        }
+
+        .why-join {
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 90px;
+    
+            h2 {
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.14px;
+            }
+    
+            .join-articles {
+    
+                .join__article {
+                    padding-left: 155px;
+                    padding-right: 155px;
+                }
+            }
+    
+        }
+
+        .vacancies {
+    
+            .vacancy {
+                flex-direction: row;
+                justify-content: space-between;
+                
+                .vacancy-desc {
+                    h3 {
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -1.07px;
+                        text-align: left;
+                        padding-bottom: 8px;
+                    }
+
+                    h4 {
+                        text-align: left;
+                    }
+                }
+
+                button {
+                    padding-left: 67px;
+                    padding-right: 67px;
                 }
             }
         }
