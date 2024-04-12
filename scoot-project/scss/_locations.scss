@@ -1,23 +1,28 @@
-main{
-    .sct-map{
+main {
+    .sct-map {
         padding: 0 32px;
         margin-top: 72px;
         margin-bottom: 40px;
     }
 
-    .container-box{
-        .container{
+    .container-box {
+        .container {
 
-            .box{
+            .box {
                 width: 100%;
                 padding: 2rem 2.5rem;
-                background-color: $yellow;
-                opacity: 15%;
+                background-color: #FCB72B26;
                 overflow: hidden;
-               margin-bottom: 16px;
-                
-                .p{
+                margin-bottom: 16px;
 
+                p {
+                    font-family: "Space Mono", monospace;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: -1.07px;
+                    color: $dark-navy;
+                    text-align: center;
                 }
 
             }
