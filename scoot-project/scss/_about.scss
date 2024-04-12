@@ -195,6 +195,13 @@ main {
       margin-bottom: 32px;
     }
     .faq {
+details{
+  width: 100%;
+        padding: 2rem 2.5rem; /** pas encore sur**/
+        background-color: $snow;
+        overflow: hidden;
+}
+
       margin: 16px 0;
       .active {
         border: none;
