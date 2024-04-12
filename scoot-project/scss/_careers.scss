@@ -1,0 +1,66 @@
+.careers__main {
+    overflow-x: hidden;
+
+    .join-mission {
+
+        padding: 72px 32px 120px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 120px;
+        overflow-x: hidden;
+        position: relative;
+
+        .join-mission__article {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            gap: 56px;
+
+            .join-article-desc {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                align-items: center;
+                text-align: center;
+
+                h2 {
+                    font-family: "Space Mono", monospace;
+                    font-size: 32px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    letter-spacing: -0.14;
+                    color: $dark-navy;
+                }
+
+                p {
+                    font-family: "Lexend Deca", sans-serif;
+                    font-size: 15px;
+                    line-height: 25px;
+                    font-weight: 400;
+                    color: $dim-grey;
+                }
+            }
+        }
+
+        .join-article-img {
+            
+            .img-mission {
+                border-radius: 50%;
+            }
+
+            .mission-grey-round-mask {
+                display: none;
+            }
+
+            .mission-yellow-arrows {
+                position: absolute;
+                scale: 1.8;
+                left: 210px;
+                top: 290px;
+            }
+        }
+    }
+}
