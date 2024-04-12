@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About-page</title>
     <link rel="stylesheet" type="text/css" href="../scss/style.scss" />
+    <script src="about.js"></script>
   </head>
   <body>
     <!---->
@@ -17,63 +18,118 @@
         </nav>
       </section>
 
-      <section>
+      <section class="sct-features">
         <!--image et icon fleche-->
         <!-- titre et texte-->
-        <img src="" alt="" />
-        <h2>Mobility for the digital era</h2>
-        <p>
-          Getting around should be simple (and even fun!) for everyone. We
-          embrace technology to provide low cost, smart access to scooters at
-          your fingertips.
-        </p>
-      </section>
+        <article class="sct-features__article">
+          <div class="sct-features__article-img">
+            <img
+              class="imag"
+              src="../assets/img/ image (fille telephone).png"
+              alt=""
+            />
+            <img
+              class="yellow-arrows arrow-phone"
+              src="../assets/img/arrow-above-left.svg"
+              alt=""
+            />
+          </div>
+          <div class="sct-features__article-txt">
+            <h2>Mobility for the digital era</h2>
+            <p>
+              Getting around should be simple (and <br> even fun!) for everyone. We
+              embrace <br> technology to provide low cost, smart <br>access to scooters
+              at your fingertips.
+            </p>
+          </div>
+        </article>
 
-      <section>
         <!--image et icon fleche-->
         <!-- titre et texte-->
-        <img src="" alt="" />
-        <h2>Better urban living</h2>
-        <p>
-          We're helping connect cities and bring people closer together. Our
-          scooters are also fully-electric and we offset the minimal carbon
-          footprint for each ride.
-        </p>
+        <article class="sct-features__article">
+          <div class="sct-features__article-img">
+            <img class="imag" src="../assets/img/img bus .png" alt="" />
+            <img
+              class="yellow-arrows arrow-bus"
+              src="../assets/img/zz-arrow-to-right.svg"
+              alt=""
+            />
+          </div>
+          <div class="sct-features__article-txt">
+            <h2>Better urban <br> living</h2>
+            <p>
+              We're helping connect cities and bring <br>people closer together. Our
+              scooters are <br> also fully-electric and we offset the <br>minimal carbon
+              footprint for each ride.
+            </p>
+          </div>
+        </article>
       </section>
 
-      <section>
+      <section class="article-features">
         <!-- titres , texes, 3 images-->
         <h2>Our values</h2>
-        <img src="" alt="" />
-        <h3>Our tech</h3>
-        <p>
-          We're using cutting edge technology to drive accessible urban
-          transportation forward. Our fully electric scooters are a joy to ride!
-        </p>
+        <article class="article-features__article">
+          <div class="article-features-img">
+            <img src="../assets/img/image main telephone.png" alt="" />
 
-        <img src="" alt="" />
-        <h3>Our integrity</h3>
-        <p>
-          We are fully committed to deliver a great yet safe, sustainable
-          micro-mobility experience in every city we serve.
-        </p>
+            <div class="circle"><p>01</p></div>
+          </div>
 
-        <img src="" alt="" />
-        <h3>Our community</h3>
-        <p>
-          We support every community we serve. All workers are paid a living
-          wage based on their location and are Scoot employees.
-        </p>
+          <div class="article-features-txt">
+            <h3>Our tech</h3>
+            <p>
+              We're using cutting edge technology to <br />drive accessible
+              urban transportation <br />
+              forward. Our fully electric scooters are a <br />joy to ride!
+            </p>
+          </div>
+        </article>
+
+        <article class="article-features__article">
+          <div class="article-features-img">
+            <img src="../assets/img/homme scooter.png" alt="" />
+            <div class="circle"><p>02</p></div>
+          </div>
+          <div class="article-features-txt">
+            <h3>Our integrity</h3>
+            <p>
+              We are fully committed to deliver a great <br />
+              yet safe, sustainable micro-mobility <br />
+              experience in every city we serve.
+            </p>
+          </div>
+        </article>
+
+        <article class="article-features__article">
+          <div class="article-features-img">
+            <img src="../assets/img/img passage pieton.png" alt="" />
+            <div class="circle"><p>03</p></div>
+          </div>
+          <div class="article-features-txt">
+            <h3>Our community</h3>
+            <p>
+              We support every community we serve. All <br />
+              workers are paid a living wage based on <br />their location and
+              are Scoot employees.
+            </p>
+          </div>
+        </article>
       </section>
 
-      <section>
+      <section class="wrap">
         <!--FAQ-->
         <h2>FAQs</h2>
         <h3>How it works</h3>
-        <div class="faq">
+        <div class="faq active">
           <button class="question">
-            How do I download the app? 
+            How do I download the app?
             <!-- <i></i> -->
+            <img
+              src="../assets/icons/petite fleche vers le bas.svg"
+              alt="fleche-bas"
+            />
+
             <!--ici on va mettre  l'icon-->
           </button>
           <div class="pannel">
@@ -88,8 +144,12 @@
         <!---->
         <div class="faq">
           <button class="question">
-            Can I find a nearby Scoots? <i></i
-            ><!--ici on va mettre  l'icon-->
+            Can I find a nearby Scoots?
+            <!--ici on va mettre  l'icon-->
+            <img
+              src="../assets/icons/petite fleche vers le bas.svg"
+              alt="fleche-bas"
+            />
           </button>
           <div class="pannel">
             <p>
@@ -101,8 +161,12 @@
         <!---->
         <div class="faq">
           <button class="question">
-            Do I need a license to ride? <i></i
-            ><!--ici on va mettre  l'icon-->
+            Do I need a license to ride?
+            <!--ici on va mettre  l'icon-->
+            <img
+              src="../assets/icons/petite fleche vers le bas.svg"
+              alt="fleche-bas"
+            />
           </button>
           <div class="pannel">
             <p>
@@ -116,8 +180,13 @@
 
         <div class="faq">
           <button class="question">
-            Should I wear a helmet? <i></i
-            ><!--ici on va mettre  l'icon-->
+            Should I wear a <br />
+            helmet?
+            <!--ici on va mettre  l'icon-->
+            <img
+              src="../assets/icons/petite fleche vers le bas.svg"
+              alt="fleche-bas"
+            />
           </button>
           <div class="pannel">
             <p>
@@ -131,8 +200,12 @@
         <!---->
         <div class="faq">
           <button class="question">
-            How about the rules & regulations? <i></i
-            ><!--ici on va mettre  l'icon-->
+            How about the rules & regulations?
+            <!--ici on va mettre  l'icon-->
+            <img
+              src="../assets/icons/petite fleche vers le bas.svg"
+              alt="fleche-bas"
+            />
           </button>
           <div class="pannel">
             <p>
@@ -144,8 +217,12 @@
         <!---->
         <div class="faq">
           <button class="question">
-            What if I damage my Scoot? <i></i
-            ><!--ici on va mettre  l'icon-->
+            What if I damage my Scoot?
+            <!--ici on va mettre  l'icon-->
+            <img
+              src="../assets/icons/petite fleche vers le bas.svg"
+              alt="fleche-bas"
+            />
           </button>
           <div class="pannel">
             <p>

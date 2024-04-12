@@ -1,0 +1,27 @@
+.circle {
+    border: 5px solid $yellow;
+    background-color: $yellow;
+    width: 96px;
+     height: 96px;
+    border-radius: 70%;
+    padding: 34px;
+text-align: center;
+margin: auto;
+margin-bottom: 16px;
+margin-top: -60px;
+z-index: 1;
+  p{
+   
+   
+    font-family:  "Space Mono";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+    text-align: center;
+    color: $dark-navy;
+
+ 
+  }
+
+}
