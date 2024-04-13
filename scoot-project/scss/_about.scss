@@ -1,7 +1,7 @@
 main {
   cursor: pointer; /** pas encore sur**/
   .nav-element-about {
-    background-image: url("../assets/img/nav-banner-mobile.jpg");
+    background-image: url("../assets/img/about.jpg");
     background-repeat: repeat;
     background-position: center center;
     height: 160px;
@@ -24,47 +24,6 @@ main {
     }
   }
 
-  .sct-back {
-    position: relative;
-    background-image: url("../assets/img/camion\ blanc\ rouge.png");
-    background-size: 150%;
-
-    h1 {
-      z-index: 2;
-      font-family: "Space Mono";
-      font-size: 40px;
-      font-weight: 700;
-      line-height: 40px;
-      letter-spacing: -1.7857142686843872px;
-      text-align: center;
-      color: $white;
-      position: relative;
-    }
-    .sct-back-txt {
-      width: 100%;
-      height: 160px;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      img {
-        width: 100%;
-        z-index: -1;
-      }
-
-      .gradient {
-        background-color: $blue;
-
-        position: absolute;
-        opacity: 75%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      }
-    }
-  }
 
   /** section 1P**/
   .sct-features {
@@ -85,20 +44,21 @@ main {
         position: relative;
         .imag {
           border-radius: 50%;
+          margin: auto;
         }
         .yellow-arrows {
           position: absolute;
           scale: 2.5;
         }
         .arrow-phone {
-          left: 100px;
-          top: 120px;
           scale: 1.5;
+          top: 130px;
+          right: -70px;
         }
         .arrow-bus {
           scale: 1.5;
           top: 20px;
-          left: -150px;
+          left: -75px;
         }
       }
       .sct-features__article-txt {
@@ -144,11 +104,13 @@ main {
       letter-spacing: -1.4285714626312256px;
       color: $dark-navy;
       margin-bottom: 64px;
+
       text-align: center;
     }
 
     .article-features__article {
       .article-features-img {
+        margin: auto;
         width: 387px;
         height: 258px;
         border-radius: 50%;
@@ -171,7 +133,7 @@ main {
           letter-spacing: -1.0714285373687744px;
           text-align: center;
           color: $dark-navy;
-          margin-top: 16px; /**50px la distance avec le 01 du cercle**/
+          margin-top: 20px; /**50px la distance avec le 01 du cercle**/
           margin-bottom: 27px;
         }
         p {
@@ -191,26 +153,26 @@ main {
     padding: 0 32px;
     /** text-align: center;**/
     margin-bottom: 120px;
-h2{
-  font-family: "Space Mono";
-font-size: 32px;
-font-weight: 700;
-line-height: 32px;
-letter-spacing: -1.4285714626312256px;
-text-align: center;
-color: $dark-navy;
-}
-h3{
-  font-family: "Space Mono";
-font-size: 24px;
-font-weight: 700;
-line-height: 28px;
-letter-spacing: -1.0714285373687744px;
-text-align: center;
-color: $dark-navy;
-margin-top: 48px;
-margin-bottom: 32px;
-}
+    h2 {
+      font-family: "Space Mono";
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: -1.4285714626312256px;
+      text-align: center;
+      color: $dark-navy;
+    }
+    h3 {
+      font-family: "Space Mono";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: -1.0714285373687744px;
+      text-align: center;
+      color: $dark-navy;
+      margin-top: 48px;
+      margin-bottom: 32px;
+    }
     details {
       width: 100%;
       margin: auto;
@@ -219,20 +181,19 @@ margin-bottom: 32px;
       overflow: hidden;
       margin-bottom: 16px;
 
-      .details-img{
+      .details-img {
         display: flex;
         width: 16px;
-height: 8px;
-top:0;
-left: 0;
-right: 0;
-bottom: 0;
+        height: 8px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
 
-border: 3px 0px 0px 0px;
-position: absolute;
-margin-left: 430px;
-margin-top: 10px;
-
+        border: 3px 0px 0px 0px;
+        position: absolute;
+        margin-left: 430px;
+        margin-top: 10px;
       }
 
       summary {
@@ -247,8 +208,6 @@ margin-top: 10px;
         letter-spacing: -0.8035714030265808px;
         text-align: left;
         color: $dark-navy;
-
-
       }
       p {
         font-family: "Lexend Deca";
