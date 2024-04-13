@@ -1,5 +1,29 @@
 main {
   cursor: pointer; /** pas encore sur**/
+  .nav-element-about {
+    background-image: url("../assets/img/nav-banner-mobile.jpg");
+    background-repeat: repeat;
+    background-position: center center;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h1 {
+      font-family: "Space Mono", monospace;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -1.78px;
+      color: $white;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
   .sct-back {
     position: relative;
     background-image: url("../assets/img/camion\ blanc\ rouge.png");
@@ -162,156 +186,85 @@ main {
       }
     }
   }
-
   /** section faq**/
   .wrap {
-    .container-faq {
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    
-      .question {
-        width: 100%;
-        height: auto;
-        margin: 5px;
-    
-        .visible-pannel {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background: $snow;
-          position: relative;
-          z-index: 100;
-          padding: 2rem 2.5rem;
-    
-          h2 {
-            font-family: "space Mono";
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 24px;
-            letter-spacing: -0.8035714030265808px;
-            color: $grey;
-          }
-    
-          img {
-            width: 16px;
-            height: 8px;
-            border: 3px 0px 0px 0px;
-          }
-        }
-    
-        .toggle-pannel {
-          padding: 0 15px;
-          height: 0;
-          opacity: 0;
-          display: none;
-    
-          &.show {
-            display: block;
-          }
-    
-          h4 {
-            font-family: "space Mono";
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 24px;
-            letter-spacing: -0.8035714030265808px;
-            color: $grey;
-          }
-    
-          p {
-            color: $dark-navy;
-            font-family: "Lexend Deca";
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 25px;
-            text-align: left;
-            background: $snow; 
-          }
-        }
-      }
-    }
-    
-
     padding: 0 32px;
-   /** text-align: center;**/
-
-    margin: auto;
+    /** text-align: center;**/
     margin-bottom: 120px;
-   /** h2 {
-      font-family: "Space Mono";
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 32px;
-      letter-spacing: -1.4285714626312256px;
-      color: $dark-navy;
-    }
-    h3 {
-      font-family: "Space Mono";
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 28px;
-      letter-spacing: -1.0714285373687744px;
-      color: $dark-navy;
-      margin-top: 48px;
-      margin-bottom: 32px;
-    }**/
-    .faq {
+h2{
+  font-family: "Space Mono";
+font-size: 32px;
+font-weight: 700;
+line-height: 32px;
+letter-spacing: -1.4285714626312256px;
+text-align: center;
+color: $dark-navy;
+}
+h3{
+  font-family: "Space Mono";
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: -1.0714285373687744px;
+text-align: center;
+color: $dark-navy;
+margin-top: 48px;
+margin-bottom: 32px;
+}
+    details {
+      width: 100%;
+      margin: auto;
+      padding: 2rem 2.5rem;
+      background-color: $snow;
+      overflow: hidden;
+      margin-bottom: 16px;
 
+      .details-img{
+        display: flex;
+        width: 16px;
+height: 8px;
+top:0;
+left: 0;
+right: 0;
+bottom: 0;
 
-      margin: 16px 0;
-      .active {
-        border: none;
+border: 3px 0px 0px 0px;
+position: absolute;
+margin-left: 430px;
+margin-top: 10px;
+
       }
-      .questions {
-        font-family: "space Mono";
-        font-weight: 700;
+
+      summary {
+        display: block;
+        background-color: $snow;
+        position: relative;
+        cursor: pointer;
+        font-family: "Space Mono";
         font-size: 18px;
+        font-weight: 700;
         line-height: 24px;
         letter-spacing: -0.8035714030265808px;
-        color: $grey;
-        background-color: $snow;
-        display: flex;
-        cursor: pointer;
-        width: 100%;
-        padding: 2rem 2.5rem; /** pas encore sur**/
-        border: none;
-        outline: none;
-        justify-content: space-between;
-        align-items: center;
         text-align: left;
-        transition: 0.4s; /**pour le changement de couleur**/
-        img {
-          width: 16px;
-          height: 8px;
-          top: 20px;
-          left: 235px;
+        color: $dark-navy;
 
-          border: 3px 0px 0px 0px;
-        }
+
       }
-      .active,
-      .question:hover {
-        background-color: $snow; /**juste pour tester**/
-      }
-      .pannel {
-        width: 100%;
-        padding: 2rem 2.5rem;
-        background-color: $snow;
-        overflow: hidden;
-        display: none;
-       /** p {
-          color: $dark-navy;
-          font-family: "Lexend Deca";
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 25px;
-          text-align: left;
-        }**/
+      p {
+        font-family: "Lexend Deca";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: left;
+        color: $dark-navy;
+        margin-top: 24px;
+        margin-bottom: 32px;
       }
     }
   }
+}
+
+/**tablette**/
+
+@media (min-width: 768px) and (max-width: 1225px) {
 }
