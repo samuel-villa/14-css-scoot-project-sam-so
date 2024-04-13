@@ -19,6 +19,7 @@ footer {
       text-align: center;
       color: $white;
     }
+
     .cercle {
       position: absolute;
       bottom: 0;
@@ -26,16 +27,18 @@ footer {
       height: 60%;
       width: 250%;
     }
+
     .cercle img {
       height: 100%;
       width: 100%;
     }
+
     .footer__div__download {
       display: flex;
-    
+
       gap: 13px;
       justify-content: center;
-      
+
     }
   }
 
@@ -44,36 +47,40 @@ footer {
     border: none;
     width: 100%;
     height: 438px;
-    padding: 0 128px;
-    padding-bottom: 41px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
-    .footer-txt1 {
-      font-family: "Space Mono", monospace;
-      font-size: 15px;
-      font-weight: 700;
-      line-height: 25px;
-      color: $dim-grey;
-
+    ul {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
+      list-style-type: none;
       gap: 16px;
-    }
+      padding-left: 0;
 
-    p:hover {
-      color: $yellow;
+      li {
+        a {
+          text-decoration: none;
+          font-family: "Space Mono", monospace;
+          font-size: 15px;
+          line-height: 25px;
+          font-weight: 700;
+          color: $dim-grey;
+        }
+
+        a:hover {
+          color: $yellow;
+        }
+      }
+
     }
 
     .log {
       padding-top: 64px;
       padding-bottom: 42px;
     }
+
     .logo {
       display: flex;
       flex-direction: row;
