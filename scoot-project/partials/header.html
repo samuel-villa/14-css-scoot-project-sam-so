@@ -12,7 +12,9 @@
       </li>
     </ul>
 
-    <button class="hidden-btn" type="button">Get Scootin</button>
+    <div class="navmenu-btn">
+      <button class="navmenu-btn-hidden" type="button">Get Scootin</button>
+    </div>
   </div>
 
   <a id="icon-hamburger" href="javascript:void(0);" onclick="openMenu()"><img src="../assets/icons/icon-hamburger.svg" alt="icon-hamburger"></a>
@@ -42,12 +44,13 @@
       const navbar = document.getElementById("navbar");
       const openButton = document.getElementById("icon-hamburger");
       const closeButton = document.getElementById("close-button");
-      if (navbar.style.display === "block") {
+      if (navbar.style.display === "flex") {
         navbar.style.display = "none";
         closeButton.style.display = "none";
         openButton.style.display = "block";
       } else {
-        navbar.style.display = "block";
+        navbar.style.display = "flex";
+        navbar.classList.add("navbar-menu");
         closeButton.style.display = "block";
         openButton.style.display = "none";
       }
