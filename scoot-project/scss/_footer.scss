@@ -1,10 +1,14 @@
 footer {
   .footer-1 {
+    padding: 88px 32px;
     background-color: $dark-navy;
     border: none;
     width: 100%;
     height: 320px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
     h2 {
       font-family: "Space Mono", monospace;
@@ -13,26 +17,26 @@ footer {
       line-height: 32px;
       letter-spacing: -1.4285714626312256px;
       text-align: center;
-      padding-top: 80px;
+      // padding-top: 80px;
       color: $white;
     }
     .cercle {
       position: absolute;
       bottom: 0;
-
       right: 0;
       height: 60%;
       width: 250%;
     }
     .cercle img {
       height: 100%;
+      width: 100%;
     }
     .footer__div__download {
       display: flex;
     
       gap: 13px;
-     justify-content: center;
-      margin: 60px 59px;
+      justify-content: center;
+      // margin: 60px;
       
     }
   }
