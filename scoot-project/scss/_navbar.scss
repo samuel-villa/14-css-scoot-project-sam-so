@@ -1,42 +1,59 @@
-// #navbar {
+// id="navbar"
 .navbar-menu {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 64px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    top: 64px;
-    left: 0;
-    width: 70vw;
-    background-color: $grey;
-    height: 95vh;
-    z-index: 2;
-    padding: 64px 32px 50px 32px;
 
-    ul {
+    .navbar-overflow {
+        z-index: 2;
+        position: absolute;
+        height: 95vh;
+        width: 30vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        right: 0;
+    }
+
+    .navbar {
         display: flex;
         flex-direction: column;
-        list-style-type: none;
-        gap: 32px;
-        padding-left: 0;
+        justify-content: space-between;
+        background-color: $grey;
+        height: 95vh;
+        width: 70vw;
+        z-index: 2;
+        padding: 64px 32px 60px 32px;
 
-        li {
-            a {
-                text-decoration: none;
-                font-family: "Space Mono", monospace;
-                color: $light-grey;
-                font-size: 18px;
-                font-weight: 700;
-                line-height: 25px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            gap: 32px;
+            padding-left: 0;
+
+            li {
+                a {
+                    text-decoration: none;
+                    font-family: "Space Mono", monospace;
+                    color: $light-grey;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 25px;
+                }
             }
         }
-    }
 
-    .navmenu-btn {
-        align-self: center;
-    }
+        .navmenu-btn {
+            align-self: center;
+        }
 
-    .navmenu-btn-hidden {
-        display: block;
+        .navmenu-btn-hidden {
+            display: block;
+        }
     }
 }
