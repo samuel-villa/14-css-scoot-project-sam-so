@@ -5,7 +5,10 @@ header {
     justify-content: space-between;
     padding: 22px 32px 22px 32px;
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
     z-index: 101;
 
     #navbar {
@@ -40,7 +43,7 @@ header {
         justify-content: space-between;
         padding: 22px 40px 22px 40px;
         width: 100%;
-        position: relative;
+        position: fixed;
 
         #navbar {
             display: none;
@@ -89,7 +92,7 @@ header {
         justify-content: flex-start;
         padding: 22px 165px 22px 165px;
         width: 100%;
-        position: relative;
+        position: fixed;
 
         #navbar {
             display: none;
