@@ -5,6 +5,8 @@ header {
     justify-content: space-between;
     padding: 22px 32px 22px 32px;
     width: 100%;
+    position: fixed;
+    z-index: 101;
 
     #navbar {
         display: none;
@@ -38,6 +40,7 @@ header {
         justify-content: space-between;
         padding: 22px 40px 22px 40px;
         width: 100%;
+        position: relative;
 
         #navbar {
             display: none;
@@ -86,6 +89,7 @@ header {
         justify-content: flex-start;
         padding: 22px 165px 22px 165px;
         width: 100%;
+        position: relative;
 
         #navbar {
             display: none;
