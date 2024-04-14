@@ -3,7 +3,7 @@ footer {
     background-color: $dark-navy;
     border: none;
     width: 100%;
-    height: 320px;
+    height: 420px;
     position: relative;
 
     h2 {
@@ -82,6 +82,97 @@ footer {
 
       img:hover {
         filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1225px) {
+  footer {
+    .footer-1 {
+      background-color: $dark-navy;
+      border: none;
+      width: 100%;
+      height: 420px;
+      position: relative;
+  
+      h2 {
+        font-family: "Space Mono", monospace;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -1.4285714626312256px;
+        text-align: center;
+        padding-top: 80px;
+        color: $white;
+      }
+      .cercle {
+        position: absolute;
+        bottom: 0;
+  
+        right: 0;
+        height: 50%;
+        width: 130%;
+      }
+      .cercle img {
+        height: 100%;
+      }
+      .footer__div__download {
+        display: flex;
+      
+        gap: 13px;
+       justify-content: center;
+        margin: 60px 59px;
+        
+      }
+    }
+  
+    .footer-2 {
+      background-color: $grey;
+      border: none;
+      width: 100%;
+      height: 438px;
+      padding: 0 128px;
+      padding-bottom: 41px;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      .footer-txt1 {
+        font-family: "Space Mono", monospace;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        color: $dim-grey;
+  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+      }
+  
+      p:hover {
+        color: $yellow;
+      }
+  
+      .log {
+        padding-top: 64px;
+        padding-bottom: 42px;
+      }
+      .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding-top: 85px;
+        gap: 24px;
+  
+        img:hover {
+          filter: brightness(0) invert(1);
+        }
       }
     }
   }
