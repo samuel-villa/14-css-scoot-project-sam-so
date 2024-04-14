@@ -4,7 +4,7 @@
 
     .scoot_sharing {
         position: relative;
-        height: 687px;
+        height: 750px;
         background-image: url("../assets/img/bg-img-scoot-share-mobile.jpg");
         background-repeat: round;
 
@@ -27,7 +27,7 @@
 
         .scoot_sharing__div {
             text-align: center;
-            padding-top: 115px;
+            padding-top: 180px;
             padding-left: 32px;
             padding-right: 32px;
 
@@ -212,11 +212,14 @@
 @media (min-width: 768px) and (max-width: 1225px) {
     .index__main {
         .scoot_sharing {
+            background-image: url("../assets/img/img-scooter-big.jpg");
+            background-repeat: space;
+            background-position: top right;
             position: relative;
-            height: 650px;
+            height: 750px;
 
             .scoot_sharing__div {
-                padding-top: 135px;
+                padding-top: 230px;
                 padding-left: 97px;
                 padding-right: 97px;
 
@@ -391,11 +394,14 @@
 @media (min-width: 1226px) {
     .index__main {
         .scoot_sharing {
+            background-image: url("../assets/img/img-scooter-big.jpg");
+            background-repeat: space;
+            background-position: top right;
             position: relative;
-            height: 650px;
+            height: 700px;
 
             .scoot_sharing__div {
-                padding-top: 153px;
+                padding-top: 200px;
                 padding-left: 165px;
                 width: 56%;
 
@@ -424,7 +430,7 @@
             #straight-line {
                 display: block;
                 position: absolute;
-                left: 0px;
+                left: -70px;
                 bottom: 300px;
             }
 
@@ -436,7 +442,8 @@
                 display: block;
                 position: absolute;
                 bottom: 165px;
-                right: 250px;
+                right: 180px;
+                z-index: 1;
             }
 
             #circles {
