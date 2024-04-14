@@ -55,6 +55,10 @@ header {
     
         .scoot-link {
             margin: 0;
+            margin-left: 20px;
+            img {
+                scale: 1.5;
+            }
         }
         
         nav {
@@ -90,7 +94,8 @@ header {
     header {
         display: flex;
         justify-content: flex-start;
-        padding: 22px 165px 22px 165px;
+        align-items:center;
+        padding: 36px 165px 36px 165px;
         width: 100%;
         position: fixed;
 
@@ -104,6 +109,8 @@ header {
     
         .scoot-link {
             margin: 0;
+            padding-right: 35px;
+            scale: 1.2;
         }
         
         nav {
