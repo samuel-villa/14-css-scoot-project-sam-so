@@ -1,31 +1,207 @@
 main {
-    .sct-map {
-        padding: 0 32px;
-        margin-top: 72px;
-        margin-bottom: 40px;
+  .nav-element {
+    background-image: url("../assets/img/nav-banner-mobile.jpg");
+    background-repeat: repeat;
+    background-position: center center;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h1 {
+      font-family: "Space Mono", monospace;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+      letter-spacing: -1.78px;
+      color: $white;
     }
 
-    .container-box {
-        .container {
+    img {
+      display: none;
+    }
+  }
 
-            .box {
-                width: 100%;
-                padding: 2rem 2.5rem;
-                background-color: #FCB72B26;
-                overflow: hidden;
-                margin-bottom: 16px;
+  .sct-map {
+    .map {
+      width: 100%;
+      padding: 0 32px;
+      margin-top: 72px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-                p {
-                    font-family: "Space Mono", monospace;
-                    font-size: 24px;
-                    font-weight: 700;
-                    line-height: 28px;
-                    letter-spacing: -1.07px;
-                    color: $dark-navy;
-                    text-align: center;
-                }
+    .locations-tablette {
+      display: none;
+    }
+  }
 
-            }
+  .container-box {
+    .container {
+      .box {
+        width: 100%;
+        padding: 2rem 2.5rem;
+        background-color: #fcb72b26;
+        overflow: hidden;
+        margin-bottom: 16px;
+
+        p {
+          font-family: "Space Mono", monospace;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: -1.07px;
+          color: $dark-navy;
+          text-align: center;
         }
+      }
     }
+  }
+
+  .sct-article {
+    .sct-article__features {
+      .sct-article-txt {
+        h2 {
+          font-family: "Space Mono";
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: -1.4285714626312256px;
+          text-align: center;
+          color: $dark-navy;
+          margin-top: 72px;
+        }
+
+        p {
+          font-family: "Lexend Deca";
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 25px;
+          text-align: center;
+          color: $dim-grey;
+          margin-top: 32px;
+        }
+      }
+
+      .sct-article-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 72px;
+        margin-top: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1225px) {
+  main {
+    .nav-element {
+      justify-content: start;
+
+      h1 {
+        padding-left: 97px;
+      }
+
+      .balls {
+        display: block;
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    .sct-map {
+      .map {
+        display: none;
+      }
+
+      .locations-tablette {
+        width: 100%;
+        padding: 0 40px;
+        margin-top: 114px;
+        margin-bottom: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .container-box {
+      display: none;
+      .container {
+        .box {
+          width: 100%;
+          padding: 2rem 2.5rem;
+          background-color: #fcb72b26;
+          overflow: hidden;
+          margin-bottom: 16px;
+
+          p {
+            font-family: "Space Mono", monospace;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: -1.07px;
+            color: $dark-navy;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .sct-article {
+      padding: 0 98px;
+      .sct-article__features {
+        .sct-article-txt {
+          h2 {
+            font-family: "Space Mono";
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: -1.4285714626312256px;
+            text-align: center;
+            color: $dark-navy;
+            margin-top: 72px;
+          }
+
+          p {
+            font-family: "Lexend Deca";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: center;
+            color: $dim-grey;
+            margin-top: 40px;
+          }
+        }
+
+        .sct-article-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 120px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1226px) {
+  
+  .nav-element {
+    justify-content: start;
+    
+    h1 {
+        padding-left: 165px;
+    }
+
+    img {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+}
 }

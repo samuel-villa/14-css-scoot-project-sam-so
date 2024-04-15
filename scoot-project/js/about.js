@@ -1,20 +1,18 @@
+
 document.addEventListener('DOMContentLoaded', function() {
-  const allCross = document.querySelectorAll('.visible-pannel img');
+  const allCross = document.querySelectorAll('.details-img img');
 
   allCross.forEach(element => {
     element.addEventListener('click', function(){
-      const togglePanel = this.parentNode.nextElementSibling;
-
       if (this.src.includes('petiteflecheverslebas')) {
         this.src = '../assets/icons/petiteflecheverslehaut.svg';
-        togglePanel.classList.add('show'); // Ajouter la classe "show"
       } else if (this.src.includes('petiteflecheverslehaut')) {
         this.src = '../assets/icons/petiteflecheverslebas.svg';
-        togglePanel.classList.remove('show'); // Retirer la classe "show"
       }
     });
   });
 });
+
 
 
 
