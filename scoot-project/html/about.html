@@ -1,213 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About-page</title>
-    <link rel="stylesheet" type="text/css" href="../scss/style.scss" />
-    <script src="../js/about.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About-page</title>
+  <link rel="stylesheet" type="text/css" href="../scss/style.scss" />
+  <script src="../js/about.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSPlugin.min.js"></script>
+
+</head>
+
+<body>
+
+  {{> header }}
+
+  <main>
+
+    <nav class="nav-element-about">
+      <h1>About</h1>
+      <img src="../assets/img/circles.png" alt="cirlces">
+    </nav>
+
+
+    <section class="sct-features">
+      <!--image et icon fleche-->
+      <!-- titre et texte-->
+      <article class="sct-features__article">
+        <div class="sct-features__article-img">
+          <img class="imag" src="../assets/img/ image (fille telephone).png" alt="" />
+          <img class="mission-grey-round-mask" src="../assets/img/grey-round.png" alt="grey-round">
+          <img class="yellow-arrows arrow-phone" src="../assets/img/zz-arrow-to-left.svg" alt="" />
+        </div>
+        <div class="sct-features__article-txt">
+          <h2>Mobility for the digital era</h2>
+          <p>
+            Getting around should be simple (and even fun!) for everyone. We
+            embrace technology to provide low cost, smart access to scooters
+            at your fingertips.
+          </p>
+        </div>
+      </article>
+
+      <!--image et icon fleche-->
+      <!-- titre et texte-->
+      <article class="sct-features__article" id="urban">
+        <div class="sct-features__article-img">
+          <img class="imag" src="../assets/img/img bus .png" alt="" />
+          <img class="mission-grey-round-mask2" src="../assets/img/grey-round2.png" alt="grey-round">
+          <img class="yellow-arrows arrow-bus" src="../assets/img/zz-arrow-to-right.svg" alt="" />
+        </div>
+        <div class="sct-features__article-txt">
+          <h2>Better urban living</h2>
+          <p>
+            We're helping connect cities and bringpeople closer together. Our
+            scooters are also fully-electric and we offset theminimal carbon
+            footprint for each ride.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <h2 class="our_values">Our values</h2>
+    <section class="article-features">
+      <!-- titres , texes, 3 images-->
+      <article class="article-features__article">
+        <div class="article-features-img">
+          <img src="../assets/img/image main telephone.png" alt="" />
+
+          <div class="circle">
+            <p class="number">01</p>
+          </div>
+        </div>
+
+        <div class="article-features-txt">
+          <h3>Our tech</h3>
+          <p>
+            We're using cutting edge technology to drive accessible
+            urban transportation
+            forward. Our fully electric scooters are a joy to ride!
+          </p>
+        </div>
+      </article>
+
+      <article class="article-features__article">
+        <div class="article-features-img">
+          <img src="../assets/img/homme scooter.png" alt="" />
+          <div class="circle">
+            <p class="number">02</p>
+          </div>
+        </div>
+        <div class="article-features-txt">
+          <h3>Our integrity</h3>
+          <p>
+            We are fully committed to deliver a great
+            yet safe, sustainable micro-mobility
+            experience in every city we serve.
+          </p>
+        </div>
+      </article>
+
+      <article class="article-features__article">
+        <div class="article-features-img">
+          <img src="../assets/img/img passage pieton.png" alt="" />
+          <div class="circle">
+            <p class="number">03</p>
+          </div>
+        </div>
+        <div class="article-features-txt">
+          <h3>Our community</h3>
+          <p>
+            We support every community we serve. All
+            workers are paid a living wage based on their location and
+            are Scoot employees.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!--faq correct-->
+    <h2 class="faq">FAQs</h2>
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSPlugin.min.js"></script>
+    <section class="wrap">
+      <h3>How it works</h3>
 
-  </head>
-  <body>
+      <details>
 
-    {{> header }}
-
-    <main>
-      
-        <nav class="nav-element-about">
-          <h1>About</h1>
-          <img src="../assets/img/circles.png" alt="cirlces">
-        </nav>
-      
-
-      <section class="sct-features">
-        <!--image et icon fleche-->
-        <!-- titre et texte-->
-        <article class="sct-features__article">
-          <div class="sct-features__article-img">
-            <img
-              class="imag"
-              src="../assets/img/ image (fille telephone).png"
-              alt=""
-            />
-            <img class="mission-grey-round-mask" src="../assets/img/grey-round.png" alt="grey-round">
-            <img
-              class="yellow-arrows arrow-phone"
-              src="../assets/img/zz-arrow-to-left.svg"
-              alt=""
-            />
+        <summary>
+          How do I download the app?
+          <div class="details-img">
+            <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
           </div>
-          <div class="sct-features__article-txt">
-            <h2>Mobility for the digital era</h2>
-            <p>
-              Getting around should be simple (and even fun!) for everyone. We
-              embrace technology to provide low cost, smartaccess to scooters
-              at your fingertips.
-            </p>
+        </summary>
+
+        <p>To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way
+          to do it would be to click the relevant link at the bottom of this page and you'll be re-directed to the
+          correct page.</p>
+      </details>
+
+
+      <details>
+        <summary>Can I find a nearby Scoots?
+          <div class="details-img">
+            <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
           </div>
-        </article>
+        </summary>
 
-        <!--image et icon fleche-->
-        <!-- titre et texte-->
-        <article class="sct-features__article">
-          <div class="sct-features__article-img">
-            <img class="imag" src="../assets/img/img bus .png" alt="" />
-            <img class="mission-grey-round-mask2" src="../assets/img/grey-round2.png" alt="grey-round">
-            <img
-              class="yellow-arrows arrow-bus"
-              src="../assets/img/zz-arrow-to-right.svg"
-              alt=""
-            />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          eius, totam et vitae consequatur illum.</p>
+      </details>
+
+
+      <details>
+        <summary>Do I need a license to ride?
+          <div class="details-img">
+            <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
           </div>
-          <div class="sct-features__article-txt">
-            <h2>Better urban living</h2>
-            <p>
-              We're helping connect cities and bringpeople closer together. Our
-              scooters are also fully-electric and we offset theminimal carbon
-              footprint for each ride.
-            </p>
+        </summary>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,
+          cumque!</p>
+      </details>
+
+      <h3>Safe driving</h3>
+
+      <details>
+        <summary>Should I wear a
+          helmet?
+          <div class="details-img">
+            <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
           </div>
-        </article>
-      </section>
+        </summary>
 
-      <section class="article-features">
-        <!-- titres , texes, 3 images-->
-        <h2>Our values</h2>
-        <article class="article-features__article">
-          <div class="article-features-img">
-            <img src="../assets/img/image main telephone.png" alt="" />
+        <p> Yes, please do! All cities have different laws. But we strongly
+          strongly strongly recommend always wearing a helmet regardless of
+          the local laws. We like you and we want you to be as safe as
+          possible while Scooting.</p>
+      </details>
 
-            <div class="circle"><p class="number">01</p></div>
+      <details>
+        <summary>How about the rules & regulations?
+          <div class="details-img">
+            <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
           </div>
+        </summary>
 
-          <div class="article-features-txt">
-            <h3>Our tech</h3>
-            <p>
-              We're using cutting edge technology to drive accessible
-              urban transportation 
-              forward. Our fully electric scooters are a joy to ride!
-            </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          eius, totam et vitae consequatur illum.</p>
+      </details>
+
+
+      <details>
+        <summary>What if I damage my Scoot?
+          <div class="details-img">
+            <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
           </div>
-        </article>
+        </summary>
 
-        <article class="article-features__article">
-          <div class="article-features-img">
-            <img src="../assets/img/homme scooter.png" alt="" />
-            <div class="circle"><p class="number">02</p></div>
-          </div>
-          <div class="article-features-txt">
-            <h3>Our integrity</h3>
-            <p>
-              We are fully committed to deliver a great 
-              yet safe, sustainable micro-mobility 
-              experience in every city we serve.
-            </p>
-          </div>
-        </article>
-
-        <article class="article-features__article">
-          <div class="article-features-img">
-            <img src="../assets/img/img passage pieton.png" alt="" />
-            <div class="circle"><p class="number">03</p></div>
-          </div>
-          <div class="article-features-txt">
-            <h3>Our community</h3>
-            <p>
-              We support every community we serve. All 
-              workers are paid a living wage based on their location and
-              are Scoot employees.
-            </p>
-          </div>
-        </article>
-      </section>
-
-<!--faq correct-->
-      <section class="wrap">
-        <h2>FAQs</h2>
-        <h3>How it works</h3>
-
-<details>
-
-  <summary>
-    How do I download the app?
-    <div class="details-img">
-      <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
-    </div>
-  </summary>
-
-  <p>To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you'll be re-directed to the correct page.</p>
-</details>
-
-
-<details>
-  <summary>Can I find a nearby Scoots?
-    <div class="details-img">
-      <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
-    </div>
-  </summary>
-
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-    eius, totam et vitae consequatur illum.</p>
-</details>
-
-
-<details>
-  <summary>Do I need a license to ride?
-    <div class="details-img">
-      <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
-    </div>
-  </summary>
-
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,
-    cumque!</p>
-</details>
-
-<h3>Safe driving</h3>
-
-<details>
-  <summary>Should I wear a 
-    helmet?
-    <div class="details-img">
-      <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
-    </div></summary>
-
-  <p> Yes, please do! All cities have different laws. But we strongly
-    strongly strongly recommend always wearing a helmet regardless of
-    the local laws. We like you and we want you to be as safe as
-    possible while Scooting.</p>
-</details>
-
-<details>
-  <summary>How about the rules & regulations?
-    <div class="details-img">
-      <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
-    </div>
-  </summary>
-
-  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-    eius, totam et vitae consequatur illum.</p>
-</details>
-
-
-<details>
-  <summary>What if I damage my Scoot?
-    <div class="details-img">
-      <img src="../assets/icons/petiteflecheverslebas.svg" alt="">
-    </div>
-  </summary>
-
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-    eius, totam et vitae consequatur illum.</p>
-</details>
-      </section>
-<!---->
-
-    </main>
-
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          eius, totam et vitae consequatur illum.</p>
+      </details>
+    </section>
     <!---->
-    {{> footer }}
-  </body>
+
+  </main>
+
+  <!---->
+  {{> footer }}
+</body>
+
 </html>
