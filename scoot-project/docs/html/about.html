@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About-page</title>
+  <script src="../js/about.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSPlugin.min.js"></script>
+
+  <link rel="stylesheet" crossorigin href="/assets/style-BN9szYpO.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <div id="navbar">
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="../html/about.html">About</a>
+          </li>
+          <li>
+            <a href="../html/locations.html">Location</a>
+          </li>
+          <li>
+            <a href="../html/careers.html">Careers</a>
+          </li>
+        </ul>
+    
+        <div class="navmenu-btn">
+          <button class="navmenu-btn-hidden" type="button">Get Scootin</button>
+        </div>
+      </div>
+      <div class="navbar-overflow"></div>
+    </div>
+  
+    <a id="icon-hamburger" href="javascript:void(0);" onclick="openMenu()"><img src="data:image/svg+xml,%3csvg%20width='20'%20height='16'%20viewBox='0%200%2020%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Group'%3e%3crect%20id='Rectangle'%20width='19.6923'%20height='3.69231'%20fill='%23FCB72B'/%3e%3crect%20id='Rectangle%20Copy'%20y='6.15381'%20width='19.6923'%20height='3.69231'%20fill='%23FCB72B'/%3e%3crect%20id='Rectangle%20Copy%202'%20y='12.3077'%20width='19.6923'%20height='3.69231'%20fill='%23FCB72B'/%3e%3c/g%3e%3c/svg%3e" alt="icon-hamburger"></a>
+    <a id="close-button" href="javascript:void(0);" onclick="openMenu()"><img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Group'%3e%3crect%20id='Rectangle%20Copy'%20x='3.18945'%20y='0.7323'%20width='19.6923'%20height='3.69231'%20transform='rotate(45%203.18945%200.7323)'%20fill='%23FCB72B'/%3e%3crect%20id='Rectangle%20Copy%202'%20x='0.578125'%20y='14.6569'%20width='19.6923'%20height='3.69231'%20transform='rotate(-45%200.578125%2014.6569)'%20fill='%23FCB72B'/%3e%3c/g%3e%3c/svg%3e" alt="close-button"></a>
+  
+    <a class="scoot-link" href="../html/index.html"><img id="scoot-logo" src="/assets/logo-scoot-Nv3ruIwZ.jpg" alt="logo-scoot"></a>
+  
+  
+    <nav>
+      <ul>
+        <li>
+          <a href="../html/about.html">About</a>
+        </li>
+        <li>
+          <a href="../html/locations.html">Location</a>
+        </li>
+        <li>
+          <a href="../html/careers.html">Careers</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <button type="button">Get Scootin</button>
+  
+    <script src="../js/openNavbar.js"></script>
+    <script src="../js/stickyMenuOnScroll.js"></script>
+  </header>
+  <main>
+
+    <nav class="nav-element-about">
+      <h1>About</h1>
+      <img src="data:image/png;base64,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" alt="cirlces">
+    </nav>
+
+
+    <section class="sct-features">
+      <!--image et icon fleche-->
+      <!-- titre et texte-->
+      <article class="sct-features__article">
+        <div class="sct-features__article-img">
+          <img class="imag" src="/assets/%20image%20(fille%20telephone)-BKZa7FLj.png" alt="" />
+          <img class="mission-grey-round-mask" src="data:image/png;base64,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" alt="grey-round">
+          <img class="yellow-arrows arrow-phone" src="data:image/svg+xml,%3csvg%20width='731'%20height='151'%20viewBox='0%200%20731%20151'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Group%2032'%3e%3cpath%20id='Path%204'%20d='M740.969%208H182.854V107.369H6.59113'%20stroke='%23FCB72B'%20stroke-width='15'%20stroke-linejoin='bevel'/%3e%3cg%20id='Group%2013'%3e%3cpath%20id='Path%203'%20d='M44.6394%20145.639L6.21313%20107.213L44.6394%2068.7869'%20stroke='%23FCB72B'%20stroke-width='15'%20stroke-linejoin='bevel'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="" />
+        </div>
+        <div class="sct-features__article-txt">
+          <h2>Mobility for the digital era</h2>
+          <p>
+            Getting around should be simple (and even fun!) for everyone. We
+            embrace technology to provide low cost, smart access to scooters
+            at your fingertips.
+          </p>
+        </div>
+      </article>
+
+      <!--image et icon fleche-->
+      <!-- titre et texte-->
+      <article class="sct-features__article" id="urban">
+        <div class="sct-features__article-img">
+          <img class="imag" src="/assets/img%20bus%20-BeTqB83O.png" alt="" />
+          <img class="mission-grey-round-mask2" src="data:image/png;base64,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" alt="grey-round">
+          <img class="yellow-arrows arrow-bus" src="data:image/svg+xml,%3csvg%20width='452'%20height='151'%20viewBox='0%200%20452%20151'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Group%208%20Copy'%3e%3cpath%20id='Path%203'%20d='M407.952%20145.444L446.378%20107.018L407.952%2068.5916'%20stroke='%23FCB72B'%20stroke-width='15'%20stroke-linejoin='bevel'/%3e%3cpath%20id='Path%204'%20d='M0%208H270.115V107.369H446.378'%20stroke='%23FCB72B'%20stroke-width='15'%20stroke-linejoin='bevel'/%3e%3c/g%3e%3c/svg%3e" alt="" />
+        </div>
+        <div class="sct-features__article-txt">
+          <h2>Better urban living</h2>
+          <p>
+            We're helping connect cities and bringpeople closer together. Our
+            scooters are also fully-electric and we offset theminimal carbon
+            footprint for each ride.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <h2 class="our_values">Our values</h2>
+    <section class="article-features">
+      <!-- titres , texes, 3 images-->
+      <article class="article-features__article">
+        <div class="article-features-img">
+          <img src="/assets/image%20main%20telephone-UC4O22FN.png" alt="" />
+
+          <div class="circle">
+            <p class="number">01</p>
+          </div>
+        </div>
+
+        <div class="article-features-txt">
+          <h3>Our tech</h3>
+          <p>
+            We're using cutting edge technology to drive accessible
+            urban transportation
+            forward. Our fully electric scooters are a joy to ride!
+          </p>
+        </div>
+      </article>
+
+      <article class="article-features__article">
+        <div class="article-features-img">
+          <img src="/assets/homme%20scooter-BpklMhEd.png" alt="" />
+          <div class="circle">
+            <p class="number">02</p>
+          </div>
+        </div>
+        <div class="article-features-txt">
+          <h3>Our integrity</h3>
+          <p>
+            We are fully committed to deliver a great
+            yet safe, sustainable micro-mobility
+            experience in every city we serve.
+          </p>
+        </div>
+      </article>
+
+      <article class="article-features__article">
+        <div class="article-features-img">
+          <img src="/assets/img%20passage%20pieton-BbiAFccQ.png" alt="" />
+          <div class="circle">
+            <p class="number">03</p>
+          </div>
+        </div>
+        <div class="article-features-txt">
+          <h3>Our community</h3>
+          <p>
+            We support every community we serve. All
+            workers are paid a living wage based on their location and
+            are Scoot employees.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!--faq correct-->
+    <h2 class="faq">FAQs</h2>
+    
+    <section class="wrap">
+      <h3>How it works</h3>
+
+      <details>
+
+        <summary>
+          How do I download the app?
+          <div class="details-img">
+            <img src="data:image/svg+xml,%3csvg%20width='18'%20height='13'%20viewBox='0%200%2018%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%202L10%2010L18%202'%20stroke='%23FCB72B'%20stroke-width='3'/%3e%3c/svg%3e" alt="">
+          </div>
+        </summary>
+
+        <p>To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way
+          to do it would be to click the relevant link at the bottom of this page and you'll be re-directed to the
+          correct page.</p>
+      </details>
+
+
+      <details>
+        <summary>Can I find a nearby Scoots?
+          <div class="details-img">
+            <img src="data:image/svg+xml,%3csvg%20width='18'%20height='13'%20viewBox='0%200%2018%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%202L10%2010L18%202'%20stroke='%23FCB72B'%20stroke-width='3'/%3e%3c/svg%3e" alt="">
+          </div>
+        </summary>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          eius, totam et vitae consequatur illum.</p>
+      </details>
+
+
+      <details>
+        <summary>Do I need a license to ride?
+          <div class="details-img">
+            <img src="data:image/svg+xml,%3csvg%20width='18'%20height='13'%20viewBox='0%200%2018%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%202L10%2010L18%202'%20stroke='%23FCB72B'%20stroke-width='3'/%3e%3c/svg%3e" alt="">
+          </div>
+        </summary>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,
+          cumque!</p>
+      </details>
+
+      <h3>Safe driving</h3>
+
+      <details>
+        <summary>Should I wear a
+          helmet?
+          <div class="details-img">
+            <img src="data:image/svg+xml,%3csvg%20width='18'%20height='13'%20viewBox='0%200%2018%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%202L10%2010L18%202'%20stroke='%23FCB72B'%20stroke-width='3'/%3e%3c/svg%3e" alt="">
+          </div>
+        </summary>
+
+        <p> Yes, please do! All cities have different laws. But we strongly
+          strongly strongly recommend always wearing a helmet regardless of
+          the local laws. We like you and we want you to be as safe as
+          possible while Scooting.</p>
+      </details>
+
+      <details>
+        <summary>How about the rules & regulations?
+          <div class="details-img">
+            <img src="data:image/svg+xml,%3csvg%20width='18'%20height='13'%20viewBox='0%200%2018%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%202L10%2010L18%202'%20stroke='%23FCB72B'%20stroke-width='3'/%3e%3c/svg%3e" alt="">
+          </div>
+        </summary>
+
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          eius, totam et vitae consequatur illum.</p>
+      </details>
+
+
+      <details>
+        <summary>What if I damage my Scoot?
+          <div class="details-img">
+            <img src="data:image/svg+xml,%3csvg%20width='18'%20height='13'%20viewBox='0%200%2018%2013'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%202L10%2010L18%202'%20stroke='%23FCB72B'%20stroke-width='3'/%3e%3c/svg%3e" alt="">
+          </div>
+        </summary>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+          eius, totam et vitae consequatur illum.</p>
+      </details>
+    </section>
+    <!---->
+
+  </main>
+
+  <!---->
+  <footer>
+    <div class="footer-1">
+      <h2>Sign up and Scoot off today</h2>
+      <div class="footer__div__download">
+  
+        <img src="data:image/png;base64,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" alt="apple">
+  
+        <img src="data:image/png;base64,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" alt="android">
+      </div>
+      <div class="cercle">
+        <img src="/assets/Group%2022-Dqmor9zm.png" alt="">
+      </div>
+    </div>
+    <div class="footer-2">
+      <div class="log">
+        <img src="/assets/scoot-CyJKXOeI.svg" alt="titre">
+      </div>
+      <ul class="footer-txt1">
+        <li>
+          <a href="../html/about.html">About</a>
+        </li>
+        <li>
+          <a href="../html/locations.html">Location</a>
+        </li>
+        <li>
+          <a href="../html/careers.html">Careers</a>
+        </li>
+      </ul>
+      <div class="logo">
+        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M22.675%200H1.325C0.593%200%200%200.593%200%201.325V22.676C0%2023.407%200.593%2024%201.325%2024H12.82V14.706H9.692V11.084H12.82V8.413C12.82%205.313%2014.713%203.625%2017.479%203.625C18.804%203.625%2019.942%203.724%2020.274%203.768V7.008L18.356%207.009C16.852%207.009%2016.561%207.724%2016.561%208.772V11.085H20.148L19.681%2014.707H16.561V24H22.677C23.407%2024%2024%2023.407%2024%2022.675V1.325C24%200.593%2023.407%200%2022.675%200Z'%20fill='%23FCB72B'/%3e%3c/svg%3e" alt="facebook" />
+        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='20'%20viewBox='0%200%2024%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24%202.55705C23.117%202.94905%2022.168%203.21305%2021.172%203.33205C22.189%202.72305%2022.97%201.75805%2023.337%200.608047C22.386%201.17205%2021.332%201.58205%2020.21%201.80305C19.313%200.846047%2018.032%200.248047%2016.616%200.248047C13.437%200.248047%2011.101%203.21405%2011.819%206.29305C7.728%206.08805%204.1%204.12805%201.671%201.14905C0.381%203.36205%201.002%206.25705%203.194%207.72305C2.388%207.69705%201.628%207.47605%200.965%207.10705C0.911%209.38805%202.546%2011.522%204.914%2011.997C4.221%2012.185%203.462%2012.229%202.69%2012.081C3.316%2014.037%205.134%2015.46%207.29%2015.5C5.22%2017.123%202.612%2017.848%200%2017.54C2.179%2018.937%204.768%2019.752%207.548%2019.752C16.69%2019.752%2021.855%2012.031%2021.543%205.10605C22.505%204.41105%2023.34%203.54405%2024%202.55705Z'%20fill='%23FCB72B'/%3e%3c/svg%3e" alt="twitter" />
+        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12%200C8.741%200%208.333%200.014%207.053%200.072C2.695%200.272%200.273%202.69%200.073%207.052C0.014%208.333%200%208.741%200%2012C0%2015.259%200.014%2015.668%200.072%2016.948C0.272%2021.306%202.69%2023.728%207.052%2023.928C8.333%2023.986%208.741%2024%2012%2024C15.259%2024%2015.668%2023.986%2016.948%2023.928C21.302%2023.728%2023.73%2021.31%2023.927%2016.948C23.986%2015.668%2024%2015.259%2024%2012C24%208.741%2023.986%208.333%2023.928%207.053C23.732%202.699%2021.311%200.273%2016.949%200.073C15.668%200.014%2015.259%200%2012%200ZM12%202.163C15.204%202.163%2015.584%202.175%2016.85%202.233C20.102%202.381%2021.621%203.924%2021.769%207.152C21.827%208.417%2021.838%208.797%2021.838%2012.001C21.838%2015.206%2021.826%2015.585%2021.769%2016.85C21.62%2020.075%2020.105%2021.621%2016.85%2021.769C15.584%2021.827%2015.206%2021.839%2012%2021.839C8.796%2021.839%208.416%2021.827%207.151%2021.769C3.891%2021.62%202.38%2020.07%202.232%2016.849C2.174%2015.584%202.162%2015.205%202.162%2012C2.162%208.796%202.175%208.417%202.232%207.151C2.381%203.924%203.896%202.38%207.151%202.232C8.417%202.175%208.796%202.163%2012%202.163ZM5.838%2012C5.838%208.597%208.597%205.838%2012%205.838C15.403%205.838%2018.162%208.597%2018.162%2012C18.162%2015.404%2015.403%2018.163%2012%2018.163C8.597%2018.163%205.838%2015.403%205.838%2012ZM12%2016C9.791%2016%208%2014.21%208%2012C8%209.791%209.791%208%2012%208C14.209%208%2016%209.791%2016%2012C16%2014.21%2014.209%2016%2012%2016ZM16.965%205.595C16.965%204.8%2017.61%204.155%2018.406%204.155C19.201%204.155%2019.845%204.8%2019.845%205.595C19.845%206.39%2019.201%207.035%2018.406%207.035C17.61%207.035%2016.965%206.39%2016.965%205.595Z'%20fill='%23FCB72B'/%3e%3c/svg%3e" alt="instagram" />
+      </div>
+    </div>
+  </footer></body>
+
+</html>
