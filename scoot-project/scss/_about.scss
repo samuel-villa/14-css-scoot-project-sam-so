@@ -6,6 +6,7 @@ main {
     background-position: center center;
     height: 160px;
     display: flex;
+    margin-top: 64px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -229,7 +230,9 @@ main {
 
 main{
   .nav-element-about {
+    margin-top: 105px;
     justify-content: start;
+    
     
     h1 {
         padding-left: 97px;
@@ -440,4 +443,25 @@ main{
     }
   }
 }
+}
+
+@media (min-width: 1226px) {
+
+  main{
+  .nav-element-about {
+    margin-top: 110px;
+    justify-content: start;
+    
+    
+    h1 {
+        padding-left: 97px;
+    }
+
+    img {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+}
+  }
 }
