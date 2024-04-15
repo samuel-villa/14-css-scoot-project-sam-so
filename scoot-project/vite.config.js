@@ -7,6 +7,9 @@ export default {
       partialDirectory: resolve(__dirname, 'partials'),
     }),
   ],
+  css: {
+    devSourcemap: true,
+  },
   build: {
     rollupOptions: {
       input: {
