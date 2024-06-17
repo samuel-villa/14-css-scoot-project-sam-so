@@ -9,6 +9,7 @@ export default defineConfig ({
       partialDirectory: resolve(__dirname, 'partials'),
     }),
   ],
+  base: "/scoot-project_frontend_pixel_perfect/",
   css: {
     devSourcemap: true,
   },
